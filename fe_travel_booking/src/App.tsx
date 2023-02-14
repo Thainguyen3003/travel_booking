@@ -10,8 +10,14 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         {travelRoutes.map((route, index) => {
-          const Path = route.component;
-          return <Route key={index} path={route.path} element={Path} />;
+          const Page = route.component;
+          return (
+            <Route
+              key={index}
+              path={route.path}
+              element={<Mainlayout>{Page}</Mainlayout>}
+            />
+          );
         })}
       </Routes>
     </Router>
