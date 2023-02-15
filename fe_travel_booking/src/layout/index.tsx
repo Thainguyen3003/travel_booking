@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Layout } from "antd";
-import { Header } from "./Header";
+import Header from "./Header";
 import SiderBar from "./Sidebar";
 import { Footer } from "./Footer";
 
